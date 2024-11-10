@@ -1,0 +1,14 @@
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\bin\Debug\UAS_DB_PamerYuk.exe.config
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\bin\Debug\UAS_DB_PamerYuk.exe
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\bin\Debug\UAS_DB_PamerYuk.pdb
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\obj\Debug\UAS_DB_PamerYuk.csproj.AssemblyReference.cache
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\obj\Debug\UAS_DB_PamerYuk.csproj.GenerateResource.cache
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\obj\Debug\UAS_DB_PamerYuk.csproj.CoreCompileInputs.cache
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\obj\Debug\UAS_DB_PamerYuk.exe
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\obj\Debug\UAS_DB_PamerYuk.pdb
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\obj\Debug\UAS_DB_PamerYuk.BaseForm.resources
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\bin\Debug\Class_PamerYuk.dll
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\bin\Debug\MySql.Data.dll
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\bin\Debug\Class_PamerYuk.pdb
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\obj\Debug\UAS_DB_PamerYuk.Properties.ImageAsset.resources
+D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\UAS_DB_PamerYuk\obj\Debug\UAS_DB_P.3404B490.Up2Date
