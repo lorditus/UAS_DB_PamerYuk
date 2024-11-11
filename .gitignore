@@ -1,5 +1,5 @@
 ECHO is on.
 
 .vs/
-/UAS_DB_PamerYuk/bin/Debug/
-/UAS_DB_PamerYuk/obj/Debug/
+UAS_DB_PamerYuk/bin/Debug/
+UAS_DB_PamerYuk/obj/Debug/
