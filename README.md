@@ -34,6 +34,10 @@ Pengerjaan project: [Project Guideline](#project-guideline) (saran)
    - Membuat konten berupa tulisan, gambar, dan kombinasinya. Dengan maksimum 1 tulisan, 1 gambar, dan 1 video pada sebuah post.
    - Dapat melakukan tag pada user lain yang telah menjadi teman.
    - Semua user yang terlibat dalam konten dapat memberikan masing-masing lebih dari 1 komentar pada konten tersebut. Yang terlibat dalam sebuah konten adalah pembuat konten, teman dari pembuat konten, dan yang di tag (teman).
+  
+## Fitur Tambahan
+1) _(belum)_
+2) _(belum)_
 
 ## Dokumentasi 
 - Penjelasan cara kerja program secara umum.
@@ -72,6 +76,33 @@ Tempat Pengumpulan: https://uls.ubaya.ac.id/mod/assign/view.php?id=60187
 # Project Guideline
 Di project UAS ini ada beberapa hal yang mau aku sarankan salah satunya penggunaan [VCS](https://www.geeksforgeeks.org/version-control-systems/) yaitu Git & GitHub supaya kerjanya enak. Untuk panduannya ada di segmen bawah, bisa dicek. Terus juga tentang [Layered Architecture Pattern](https://priyalwalpita.medium.com/software-architecture-patterns-layered-architecture-a3b89b71a057) yang kusarankan kita pakai. Untuk yang satu ini udah kutanyain ke Pak DanSus dan udah diapprove. Di project OOP ku sebelumnya juga pake ini, bisa dicek di [sini](https://github.com/StaticKev/FoodWars). Bedanya untuk project kali ini aku tambahin satu layer lagi supaya lebih relate sama materi kita di kelas. 
 
+## Version Control System (VCS) - _Git & Github_
+Ndak perlu penjelasan, langsung step-step nya aja. Tapi kalo butuh penjelasan lengkap ada di course [ini](https://www.youtube.com/watch?v=lTMZxWMjXQU&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf).  
+### 
+**Langkah-langkah ini cukup diikuti sekali aja:**
+1) Buka GitHub repository ku.
+2) Fork repository ku ke akun GitHub kalian.
+3) Clone repository yang baru aja kalian fork ke folder tujuan di laptop kalian (ini download, bukan sekedar project tapi Git repository, jadi ada history nya juga).
+4) Buka project.
+### 
+**Langkah-langkah tiap kali mau buat perubahan:**
+1) Buka GitHub kalian.
+2) Buka repository dari project ini di GitHub kalian.
+3) Pastikan ndak ada perubahan di repository ku (biasanya muncul notif di repo kalian).
+4) Kalo ada perubahan, compare & pull request dulu.
+5) Buka terminal di directory project ini (folder yang ada .git nya).
+6) Ketik `git fetch`, lalu Enter.
+7) Ketik `git pull`, lalu Enter.
+8) Buat branch baru, ketik `git branch namaBranch`, lalu Enter.
+9) Checkout ke branch yang baru aja kalian buat, ketik `git checkout namaBranch`, lalu Enter.
+10) Buat perubahan di Visual Studio kemudian simpan.
+11) Buka terminal lagi, tambahkan perubahan ke working directory dari git, ketik `git add .`, lalu Enter.
+12) Commit perubahan, ketik `git commit -m "Tulis kalian ubah apa di sini."`, lalu Enter.
+13) Checkout ke main branch, ketik `git checkout main`, lalu Enter.
+14) Kemudian push perubahan ke repository di GitHub kalian, ketik `git push --set-upstream origin`, lalu Enter.
+15) Hapus branch yang tadi dipakai `git branch -d namaBranch`, lalu Enter.
+16) Kalau perubahan sudah kutarik, branch yang di GitHub repo boleh dihapus biar ndak ketumpuk. 
+
 ## Introduction to Software Architecture Pattern
 Software architecture pattern itu singkatnya adalah sebuah rancangan yang bisa dijadikan pedoman untuk  seorang programmer supaya kode yang ditulis itu istilahnya lebih _bersih_. Dalam artian, kegunaan setiap class itu jelas (mengacu pada prinsip [_separation of concerns_](https://www.geeksforgeeks.org/separation-of-concerns-soc/)), perubahan pada sebuah fitur tidak akan berdampak pada fitur lainnya, dapat dikerjakan secara terpisah, dan mudah untuk diuji coba. Tiga hal yang kusebutin di akhir berkaitan tentang [modularitas](https://www.institutedata.com/blog/modularity-in-software-engineering/) sebuah perangkat lunak. Jadi nanti satu orang bisa ngerjain satu fitur tanpa tabrakan sama yang lain. Lebih gampang di manage juga.
 
@@ -85,7 +116,9 @@ Sebuah pola arsitektur perangkat lunak yang paling sederhana. Pattern ini membag
 ![LayeredArchitecture](https://github.com/user-attachments/assets/0b3a0fb2-633d-4989-add0-5c1090c04092)
 
 ### Contoh 
-Sebuah aplikasi yang memiliki fitur untuk mencatat perubahan mata kuliah dari mahasiswa di sebuah universitas. Seorang mahasiswa dapat mengambil sekurang-kurangnya 20 sks dan maksimum 24 sks. Ada 2 buah Entity Mahasiswa dan MataKuliah.  
+Sebuah aplikasi yang memiliki fitur pendaftaran mata kuliah dari mahasiswa di sebuah universitas. Seorang mahasiswa dapat mengambil sekurang-kurangnya 20 sks dan maksimum 24 sks. Ada 2 buah Entity Mahasiswa dan MataKuliah.   
+### 
+**Class MataKuliah**
 ```C#
  public class MataKuliah
  {
@@ -104,7 +137,6 @@ Sebuah aplikasi yang memiliki fitur untuk mencatat perubahan mata kuliah dari ma
              else namaMk = value;
          }
      }
-
      public int Sks 
      { 
          get => sks; 
@@ -115,8 +147,9 @@ Sebuah aplikasi yang memiliki fitur untuk mencatat perubahan mata kuliah dari ma
          }
      }
  }
-
-
+```
+**Class Mahasiswa**
+```C#
  public class Mahasiswa
  {
      private string nama, nrp;
@@ -179,6 +212,357 @@ Sebuah aplikasi yang memiliki fitur untuk mencatat perubahan mata kuliah dari ma
      { 
          MkDiambil.Remove(mk);
          Sks -= mk.Sks;
+     }
+ }
+```
+### 
+Setelah itu dapat dibuat DAO untuk masing-masing class. _**Disclaimer:**_ Yang ini kuambil dari ChatGPT, implementasi di aplikasi kita ngikuti yang diajari di kelas.  
+**DAO untuk MataKuliah**
+```C#
+ public class MataKuliahDAO
+ {
+     private readonly string connectionString;
+
+    public MataKuliahDAO(string connectionString) { this.connectionString = connectionString; }
+
+     public void Insert(MataKuliah mataKuliah)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "INSERT INTO MataKuliah (namaMk, sks) VALUES (@namaMk, @sks)";
+             
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@namaMk", mataKuliah.NamaMk);
+                 command.Parameters.AddWithValue("@sks", mataKuliah.Sks);
+
+                 command.ExecuteNonQuery();
+             }
+         }
+     }
+
+     public MataKuliah GetById(int id)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "SELECT namaMk, sks FROM MataKuliah WHERE id = @id";
+            
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@id", id);
+
+                 using (var reader = command.ExecuteReader())
+                 {
+                     if (reader.Read())
+                     {
+                         string namaMk = reader.GetString(0);
+                         int sks = reader.GetInt32(1);
+                         return new MataKuliah(namaMk, sks);
+                     }
+                 }
+             }
+         }
+         return null;
+     }
+
+     public List<MataKuliah> GetAll()
+     {
+         var mataKuliahList = new List<MataKuliah>();
+
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "SELECT namaMk, sks FROM MataKuliah";
+            
+             using (var command = new SqlCommand(query, connection))
+             using (var reader = command.ExecuteReader())
+             {
+                 while (reader.Read())
+                 {
+                     string namaMk = reader.GetString(0);
+                     int sks = reader.GetInt32(1);
+                     mataKuliahList.Add(new MataKuliah(namaMk, sks));
+                 }
+             }
+         }
+         return mataKuliahList;
+     } 
+
+     public void Update(int id, MataKuliah mataKuliah)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "UPDATE MataKuliah SET namaMk = @namaMk, sks = @sks WHERE id = @id";
+            
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@namaMk", mataKuliah.NamaMk);
+                 command.Parameters.AddWithValue("@sks", mataKuliah.Sks);
+                 command.Parameters.AddWithValue("@id", id);
+
+                 command.ExecuteNonQuery();
+             }
+         } 
+     } 
+
+     public void Delete(int id)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "DELETE FROM MataKuliah WHERE id = @id";
+             
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@id", id);
+                 command.ExecuteNonQuery();
+             }
+         }
+     }
+ }
+```
+**DAO untuk Mahasiswa**
+```C#
+ public class MahasiswaDAO
+ {
+     private readonly string connectionString;
+
+     public MahasiswaDAO(string connectionString) { this.connectionString = connectionString; }
+
+     public void Insert(Mahasiswa mahasiswa)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "INSERT INTO Mahasiswa (nama, nrp, sks) VALUES (@nama, @nrp, @sks)";
+            
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@nama", mahasiswa.Nama);
+                 command.Parameters.AddWithValue("@nrp", mahasiswa.Nrp);
+                 command.Parameters.AddWithValue("@sks", mahasiswa.Sks); 
+
+                 command.ExecuteNonQuery();
+             }
+         }
+     }
+ 
+     public Mahasiswa GetById(int id)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "SELECT nama, nrp, sks FROM Mahasiswa WHERE id = @id";
+            
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@id", id);
+
+                 using (var reader = command.ExecuteReader())
+                 {
+                     if (reader.Read())
+                     {
+                         string nama = reader.GetString(0);
+                         string nrp = reader.GetString(1);
+                         int sks = reader.GetInt32(2);
+                         return new Mahasiswa(nama, nrp) { Sks = sks };
+                     }
+                 } 
+             }
+         }
+         return null;
+     }
+
+     public List<Mahasiswa> GetAll()
+     {
+         var mahasiswaList = new List<Mahasiswa>(); 
+
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "SELECT nama, nrp, sks FROM Mahasiswa";
+             
+             using (var command = new SqlCommand(query, connection))
+             using (var reader = command.ExecuteReader())
+             {
+                 while (reader.Read())
+                 {
+                     string nama = reader.GetString(0);
+                     string nrp = reader.GetString(1);
+                     int sks = reader.GetInt32(2);
+                     mahasiswaList.Add(new Mahasiswa(nama, nrp) { Sks = sks });
+                 }
+             }
+         }
+         return mahasiswaList;
+     } 
+
+     public void Update(int id, Mahasiswa mahasiswa)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "UPDATE Mahasiswa SET nama = @nama, nrp = @nrp, sks = @sks WHERE id = @id";
+            
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@nama", mahasiswa.Nama);
+                 command.Parameters.AddWithValue("@nrp", mahasiswa.Nrp);
+                 command.Parameters.AddWithValue("@sks", mahasiswa.Sks);
+                 command.Parameters.AddWithValue("@id", id);
+
+                 command.ExecuteNonQuery();
+             }
+         }
+     }
+
+     public void Delete(int id)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "DELETE FROM Mahasiswa WHERE id = @id";
+             
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@id", id);
+                 command.ExecuteNonQuery();
+             }
+         }
+     }
+ }
+```
+Kemudian membuat class repository. Implementasi yang ini juga kuambil dari ChatGPT. Harusnya perintah query yang di sini masuk ke DAO nya mata kuliah.  
+**Repository untuk fitur pendaftaran mata kuliah**
+```C#
+  public class MahasiswaRepository
+  {
+      private readonly MahasiswaDAO mahasiswaDAO;
+      private readonly MataKuliahDAO mataKuliahDAO;
+      private readonly string connectionString; 
+
+      public MahasiswaRepository(string connectionString)
+      {
+          this.connectionString = connectionString;
+          this.mahasiswaDAO = new MahasiswaDAO(connectionString);
+          this.mataKuliahDAO = new MataKuliahDAO(connectionString);
+      }
+
+      public Mahasiswa GetMahasiswaWithCourses(int mahasiswaId)
+      {
+          // Retrieve Mahasiswa by ID
+          Mahasiswa mahasiswa = mahasiswaDAO.GetById(mahasiswaId);
+
+         if (mahasiswa != null) mahasiswa.MkDiambil = GetMataKuliahForMahasiswa(mahasiswaId); 
+         return mahasiswa;
+     }
+
+     private List<MataKuliah> GetMataKuliahForMahasiswa(int mahasiswaId)
+     {
+         var mataKuliahList = new List<MataKuliah>();
+
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "SELECT mk.namaMk, mk.sks FROM MahasiswaMataKuliah mmk " +
+                            "JOIN MataKuliah mk ON mmk.mataKuliahId = mk.id " +
+                            "WHERE mmk.mahasiswaId = @mahasiswaId";
+
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@mahasiswaId", mahasiswaId);
+
+                 using (var reader = command.ExecuteReader())
+                 {
+                     while (reader.Read())
+                     {
+                         string namaMk = reader.GetString(0);
+                         int sks = reader.GetInt32(1);
+                         mataKuliahList.Add(new MataKuliah(namaMk, sks));
+                     }
+                 }
+             }
+         }
+
+         return mataKuliahList;
+     }
+
+     public void RemoveMataKuliahFromMahasiswa(int mahasiswaId, int mataKuliahId)
+     {
+         using (var connection = new SqlConnection(connectionString))
+         {
+             connection.Open();
+             string query = "DELETE FROM MahasiswaMataKuliah WHERE mahasiswaId = @mahasiswaId AND mataKuliahId = @mataKuliahId";
+
+             using (var command = new SqlCommand(query, connection))
+             {
+                 command.Parameters.AddWithValue("@mahasiswaId", mahasiswaId);
+                 command.Parameters.AddWithValue("@mataKuliahId", mataKuliahId);
+
+                 command.ExecuteNonQuery();
+             }
+         }
+
+         // Update the Sks count for the Mahasiswa after removing the MataKuliah
+         var mahasiswa = mahasiswaDAO.GetById(mahasiswaId);
+         if (mahasiswa != null)
+         {
+             var mataKuliah = mataKuliahDAO.GetById(mataKuliahId);
+             if (mataKuliah != null)
+             {
+                 mahasiswa.Sks -= mataKuliah.Sks;
+                 mahasiswaDAO.Update(mahasiswaId, mahasiswa);
+             }
+         }
+     }
+ }
+```
+Terakhir service layer, yang isinya logic untuk pendaftaran mata kuliah mahasiswa. Presentation layer ndak kumasukin soalnya berkaitan sama desain UI. Ini juga kuambil dari GPT, harusnya DAP ndak boleh di inject langsung ke service.  
+**Service untuk fitur pendaftaran mata kuliah**
+```C#
+ public class MahasiswaService
+ {
+     private readonly MahasiswaRepository mahasiswaRepository;
+     private readonly MataKuliahDAO mataKuliahDAO;
+
+     // Constructor injection for MahasiswaRepository and MataKuliahDAO
+     public MahasiswaService(MahasiswaRepository mahasiswaRepository, MataKuliahDAO mataKuliahDAO)
+     {
+         this.mahasiswaRepository = mahasiswaRepository;
+         this.mataKuliahDAO = mataKuliahDAO;
+     }
+
+     // Assign MataKuliah to Mahasiswa
+     public void AssignMataKuliahToMahasiswa(int mahasiswaId, int mataKuliahId)
+     {
+         // Retrieve Mahasiswa and MataKuliah from the database
+         Mahasiswa mahasiswa = mahasiswaRepository.GetMahasiswaWithCourses(mahasiswaId);
+         MataKuliah mataKuliah = mataKuliahDAO.GetById(mataKuliahId);
+
+         if (mahasiswa == null)
+         {
+             throw new Exception("Mahasiswa not found.");
+         }
+
+         if (mataKuliah == null)
+         {
+             throw new Exception("MataKuliah not found.");
+         }
+
+         // Check if the total SKS after assignment exceeds the limit
+         if (mahasiswa.Sks + mataKuliah.Sks > 24)
+         {
+             throw new Exception("SKS quota exceeded. Cannot assign this course.");
+         }
+
+         // Add MataKuliah to Mahasiswa's course list and update SKS
+         mahasiswa.TambahMataKuliah(mataKuliah);
+
+         // Update Mahasiswa in the database to save the new SKS count and course assignment
+         mahasiswaRepository.mahasiswaDAO.Update(mahasiswaId, mahasiswa);
      }
  }
 ```
