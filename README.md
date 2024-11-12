@@ -58,3 +58,10 @@ Penilaian akan dilaksanakan pada minggu kedua UAS. Sesi penilaian akan dibagi me
 - Durasi maksimal tanya jawab 5 menit.
 - Penilaian individu dilaksanakan setelah sesi presentasi.
 - Durasi tes individu per personel 3 menit.
+
+## Pengumpulan
+- Pengumpulan paling lambat _**Sabtu, 11 Januari 2025 pukul 20:00**_
+- Pengumpulan diwakilkan oleh satu anggota kelompok
+- Yang dikumpulkan adalah _**1 file zip**_ yang berisi: Dokumentasi project, project, ERD, file SQL yang berisi perintah pembuatan tabel dan data.
+- Penamaan file: 21_Menyala DB kuu🚀🚀.ZIP
+Tempat Pengumpulan: https://uls.ubaya.ac.id/mod/assign/view.php?id=60187
