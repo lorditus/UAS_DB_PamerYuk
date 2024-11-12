@@ -8,7 +8,9 @@ Membuat sebuah aplikasi pertemanan **PamerYuk**.
 |160423098| Daniel Yang| A
 |160422142| Aulia Novianty Lamanasa| F  
 ###
-Google Drive Kelompok: https://drive.google.com/drive/folders/1JvKJdJCAzD9GjCQltspH8-gWIfkhsqZF
+Google Drive Kelompok: https://drive.google.com/drive/folders/1JvKJdJCAzD9GjCQltspH8-gWIfkhsqZF  
+Pengerjaan project: [Project Guideline](#project-guideline) (saran) 
+
 
 ## Ketentuan Project
 - Project dikerjakan menggunakan C#
@@ -66,3 +68,5 @@ Penilaian akan dilaksanakan pada minggu kedua UAS. Sesi penilaian akan dibagi me
 - Penamaan file: 21_Menyala DB kuu🚀🚀.ZIP  
 
 Tempat Pengumpulan: https://uls.ubaya.ac.id/mod/assign/view.php?id=60187
+
+# Project Guideline
