@@ -9,9 +9,15 @@ Membuat sebuah aplikasi pertemanan **PamerYuk**.
 |160422142| Aulia Novianty Lamanasa| F  
 ###
 Google Drive Kelompok: https://drive.google.com/drive/folders/1JvKJdJCAzD9GjCQltspH8-gWIfkhsqZF  
-Pengerjaan project: [Project Guideline](#project-guideline) (saran) 
-
-
+### [Project Guideline](Project-Guideline)
+- [Version Control System (VCS) - Git & Github](version-control-system-(VCS)-_Git-&-Github_)
+   - [Fork & Clone Repository](Fork-&-Clone-Repository-_(sekali-aja)_)
+   - [Langkah Membuat, Menyimpan dan Menyinkronkan Perubahan](Langkah-Membuat,-Menyimpan-dan-Menyinkronkan-Perubahan)
+- [Introduction to Software Architecture Pattern](Introduction-to-Software-Architecture-Pattern)
+   - [Layered Architecture Pattern](Layered-Architecture-Pattern)
+   - [Contoh](Contoh)
+- [Notes](Notes)
+  
 ## Ketentuan Project
 - Project dikerjakan menggunakan C#
 - Desain UI sesuai kebutuhan
@@ -78,8 +84,7 @@ Di project UAS ini ada beberapa hal yang mau aku sarankan salah satunya pengguna
 
 ## Version Control System (VCS) - _Git & Github_
 Ndak perlu penjelasan, langsung step-step nya aja. Tapi kalo butuh penjelasan lengkap ada di course [ini](https://www.youtube.com/watch?v=lTMZxWMjXQU&list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf).  
-### 
-**Langkah-langkah ini cukup diikuti sekali aja:**
+### Fork & Clone Repository _(sekali aja)_
 1) Buka GitHub repository ku.
 2) Fork repository ku ke akun GitHub kalian.
 3) Copy link GitHub repository kalian.
@@ -87,8 +92,7 @@ Ndak perlu penjelasan, langsung step-step nya aja. Tapi kalo butuh penjelasan le
 5) Buka folder, klik kanan, klik open in terminal.
 6) Ketik `git clone https://github.com/userName/UAS_DB_PamerYuk`, lalu Enter. 'userName' diganti username GitHub kalian. 
 7) Buka project.
-### 
-**Langkah-langkah tiap kali mau buat perubahan:**
+### Langkah Membuat, Menyimpan dan Menyinkronkan Perubahan 
 1) Buka GitHub kalian.
 2) Buka repository dari project ini di GitHub kalian.
 3) Pastikan ndak ada perubahan di repository ku (biasanya muncul notif di repo kalian).
@@ -574,3 +578,6 @@ Terakhir service layer, yang isinya logic untuk pendaftaran mata kuliah mahasisw
      }
  }
 ```
+## Notes
+- ERD masih harus ditambahi.
+- File konfigurasi database ada passwordnya, kalau pakai XAMPP jangan lupa password db di class Connection dicomment
