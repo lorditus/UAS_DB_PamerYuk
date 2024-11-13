@@ -9,15 +9,15 @@ Membuat sebuah aplikasi pertemanan **PamerYuk**.
 |160422142| Aulia Novianty Lamanasa| F  
 ###
 Google Drive Kelompok: https://drive.google.com/drive/folders/1JvKJdJCAzD9GjCQltspH8-gWIfkhsqZF  
-### [Project Guideline](#project-guideline)
-- [Version Control System (VCS) - Git & Github](version-control-system-(VCS)-_Git-&-Github_)
-   - [Fork & Clone Repository](Fork-&-Clone-Repository-_(sekali-aja)_)
-   - [Langkah Membuat, Menyimpan dan Menyinkronkan Perubahan](Langkah-Membuat,-Menyimpan-dan-Menyinkronkan-Perubahan)
-- [Introduction to Software Architecture Pattern](Introduction-to-Software-Architecture-Pattern)
-   - [Layered Architecture Pattern](Layered-Architecture-Pattern)
-   - [Contoh](Contoh)
-- [Penjelasan folder dalam aplikasi](penjelasan-folder)
-- [Notes](Notes)
+### [Lihat Project Guideline](#project-guideline)
+- [Alur kerja dengan VCS](#version-control-system-vcs---git--github)
+   - [Fork & Clone Repository](#fork--clone-repository-sekali-aja)
+   - [Membuat Perubahan](#langkah-membuat-menyimpan-dan-menyinkronkan-perubahan)
+- [Pengenalan Software Architecture Pattern](#introduction-to-software-architecture-pattern)
+   - [Layered Architecture Pattern](layered-architecture-pattern)
+   - [Contoh Penerapan Sederhana](#contoh)
+- [Penjelasan folder dalam aplikasi](#penjelasan-folder)
+- [Catatan](#notes)
   
 ## Ketentuan Project
 - Project dikerjakan menggunakan C#
