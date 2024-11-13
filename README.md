@@ -9,7 +9,7 @@ Membuat sebuah aplikasi pertemanan **PamerYuk**.
 |160422142| Aulia Novianty Lamanasa| F  
 ###
 Google Drive Kelompok: https://drive.google.com/drive/folders/1JvKJdJCAzD9GjCQltspH8-gWIfkhsqZF  
-### [Project Guideline](Project-Guideline)
+### [Project Guideline](#project-guideline)
 - [Version Control System (VCS) - Git & Github](version-control-system-(VCS)-_Git-&-Github_)
    - [Fork & Clone Repository](Fork-&-Clone-Repository-_(sekali-aja)_)
    - [Langkah Membuat, Menyimpan dan Menyinkronkan Perubahan](Langkah-Membuat,-Menyimpan-dan-Menyinkronkan-Perubahan)
