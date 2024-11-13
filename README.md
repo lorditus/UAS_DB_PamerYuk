@@ -82,8 +82,11 @@ Ndak perlu penjelasan, langsung step-step nya aja. Tapi kalo butuh penjelasan le
 **Langkah-langkah ini cukup diikuti sekali aja:**
 1) Buka GitHub repository ku.
 2) Fork repository ku ke akun GitHub kalian.
-3) Clone repository yang baru aja kalian fork ke folder tujuan di laptop kalian (ini download, bukan sekedar project tapi Git repository, jadi ada history nya juga).
-4) Buka project.
+3) Copy link GitHub repository kalian.
+4) Buat folder di laptop kalian.
+5) Buka folder, klik kanan, klik open in terminal.
+6) Ketik `git clone https://github.com/userName/UAS_DB_PamerYuk`, lalu Enter. 'userName' diganti username GitHub kalian. 
+7) Buka project.
 ### 
 **Langkah-langkah tiap kali mau buat perubahan:**
 1) Buka GitHub kalian.
@@ -218,6 +221,7 @@ Sebuah aplikasi yang memiliki fitur pendaftaran mata kuliah dari mahasiswa di se
 ```
 ### 
 Setelah itu dapat dibuat DAO untuk masing-masing class. _**Disclaimer:**_ Yang ini kuambil dari ChatGPT, implementasi di aplikasi kita ngikuti yang diajari di kelas.  
+### 
 **DAO untuk MataKuliah**
 ```C#
  public class MataKuliahDAO
@@ -325,6 +329,7 @@ Setelah itu dapat dibuat DAO untuk masing-masing class. _**Disclaimer:**_ Yang i
      }
  }
 ```
+### 
 **DAO untuk Mahasiswa**
 ```C#
  public class MahasiswaDAO
@@ -437,6 +442,7 @@ Setelah itu dapat dibuat DAO untuk masing-masing class. _**Disclaimer:**_ Yang i
  }
 ```
 Kemudian membuat class repository. Implementasi yang ini juga kuambil dari ChatGPT. Harusnya perintah query yang di sini masuk ke DAO nya mata kuliah.  
+### 
 **Repository untuk fitur pendaftaran mata kuliah**
 ```C#
   public class MahasiswaRepository
@@ -521,7 +527,8 @@ Kemudian membuat class repository. Implementasi yang ini juga kuambil dari ChatG
      }
  }
 ```
-Terakhir service layer, yang isinya logic untuk pendaftaran mata kuliah mahasiswa. Presentation layer ndak kumasukin soalnya berkaitan sama desain UI. Ini juga kuambil dari GPT, harusnya DAP ndak boleh di inject langsung ke service.  
+Terakhir service layer, yang isinya logic untuk pendaftaran mata kuliah mahasiswa. Presentation layer ndak kumasukin soalnya berkaitan sama desain UI. Ini juga kuambil dari GPT, harusnya DAO ndak boleh di inject langsung ke service.  
+### 
 **Service untuk fitur pendaftaran mata kuliah**
 ```C#
  public class MahasiswaService
