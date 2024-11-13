@@ -1,13 +1,13 @@
-﻿namespace UAS_DB_PamerYuk
+﻿namespace UAS_DB_PamerYuk.F4_Content.View
 {
-    partial class BaseForm
+    partial class AddContentUC
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,28 +20,23 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
             this.SuspendLayout();
             // 
-            // BaseForm
+            // AddContentUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 700);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "BaseForm";
-            this.Text = "PamerYuk";
-            this.Load += new System.EventHandler(this.BaseForm_Load);
+            this.Name = "AddContentUC";
+            this.Size = new System.Drawing.Size(450, 700);
+            this.Load += new System.EventHandler(this.AddContentUC_Load);
             this.ResumeLayout(false);
 
         }
@@ -49,4 +44,3 @@
         #endregion
     }
 }
-
