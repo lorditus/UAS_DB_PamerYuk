@@ -1,7 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Configuration;
 
-namespace UAS_DB_PamerYuk.Utility
+namespace UAS_DB_PamerYuk
 {
     public class Connection
     {
@@ -14,7 +14,7 @@ namespace UAS_DB_PamerYuk.Utility
             Configuration myConf = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             ConfigurationSectionGroup userSettings = myConf.SectionGroups["userSettings"];
 
-            var settingsSection = userSettings.Sections["_160423020_POS_DB_Form.DB"] as ClientSettingsSection;
+            var settingsSection = userSettings.Sections["UAS_DB_PamerYuk.Properties.DB"] as ClientSettingsSection;
 
             string pS = settingsSection.Settings.Get("DbServer").Value.ValueXml.InnerText;
             string pD = settingsSection.Settings.Get("DbName").Value.ValueXml.InnerText;
