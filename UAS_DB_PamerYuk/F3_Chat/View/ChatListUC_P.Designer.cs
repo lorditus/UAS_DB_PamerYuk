@@ -1,6 +1,6 @@
 ﻿namespace UAS_DB_PamerYuk.F3_Chat.View
 {
-    partial class ChatListUC
+    partial class ChatListUC_P
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,12 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // ChatListUC
+            // ChatListUC_P
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ChatListUC";
-            this.Size = new System.Drawing.Size(400, 700);
+            this.BackColor = System.Drawing.Color.Green;
+            this.Name = "ChatListUC_P";
+            this.Size = new System.Drawing.Size(400, 638);
             this.Load += new System.EventHandler(this.ChatListUC_Load);
             this.ResumeLayout(false);
 

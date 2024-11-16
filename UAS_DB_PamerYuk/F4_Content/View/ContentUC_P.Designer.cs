@@ -1,6 +1,6 @@
-﻿namespace UAS_DB_PamerYuk.F2_Friendship.View
+﻿namespace UAS_DB_PamerYuk.F4_Content.View
 {
-    partial class SearchUC
+    partial class ContentUC_P
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // SearchUC
+            // ContentUC_P
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "SearchUC";
-            this.Size = new System.Drawing.Size(400, 700);
-            this.Load += new System.EventHandler(this.SearchUC_Load);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Name = "ContentUC_P";
+            this.Size = new System.Drawing.Size(400, 638);
+            this.Load += new System.EventHandler(this.MultipleContentUC_Load);
             this.ResumeLayout(false);
 
         }

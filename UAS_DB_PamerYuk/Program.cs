@@ -13,7 +13,11 @@ namespace UAS_DB_PamerYuk
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+
+            Connection connection = new Connection();
+            MainForm mainForm = new MainForm(connection);
+
+            Application.Run(mainForm);
         }
     }
 }
