@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "ChatRoomUC";
-            this.Size = new System.Drawing.Size(400, 700);
+            this.Size = new System.Drawing.Size(400, 638);
             this.Load += new System.EventHandler(this.ChatRoomUC_Load);
             this.ResumeLayout(false);
 

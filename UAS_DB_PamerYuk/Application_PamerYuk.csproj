@@ -36,9 +36,12 @@
     <Reference Include="MySql.Data">
       <HintPath>C:\Users\Windows\Downloads\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +51,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\KisahHidupDAO.cs" />
@@ -65,11 +69,11 @@
     <Compile Include="F1_UserManager\View\LoginUC.Designer.cs">
       <DependentUpon>LoginUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="F1_UserManager\View\ProfileUC.cs">
+    <Compile Include="F1_UserManager\View\ProfileUC_P.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="F1_UserManager\View\ProfileUC.Designer.cs">
-      <DependentUpon>ProfileUC.cs</DependentUpon>
+    <Compile Include="F1_UserManager\View\ProfileUC_P.Designer.cs">
+      <DependentUpon>ProfileUC_P.cs</DependentUpon>
     </Compile>
     <Compile Include="F1_UserManager\View\SignInUC.cs">
       <SubType>UserControl</SubType>
@@ -95,17 +99,17 @@
     <Compile Include="F2_Friendship\View\FriendRequestUC.Designer.cs">
       <DependentUpon>FriendRequestUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="F2_Friendship\View\SearchUC.cs">
+    <Compile Include="F2_Friendship\View\SearchUC_P.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="F2_Friendship\View\SearchUC.Designer.cs">
-      <DependentUpon>SearchUC.cs</DependentUpon>
+    <Compile Include="F2_Friendship\View\SearchUC_P.Designer.cs">
+      <DependentUpon>SearchUC_P.cs</DependentUpon>
     </Compile>
-    <Compile Include="F3_Chat\View\ChatListUC.cs">
+    <Compile Include="F3_Chat\View\ChatListUC_P.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="F3_Chat\View\ChatListUC.Designer.cs">
-      <DependentUpon>ChatListUC.cs</DependentUpon>
+    <Compile Include="F3_Chat\View\ChatListUC_P.Designer.cs">
+      <DependentUpon>ChatListUC_P.cs</DependentUpon>
     </Compile>
     <Compile Include="F3_Chat\View\ChatRoomUC.cs">
       <SubType>UserControl</SubType>
@@ -128,11 +132,11 @@
     <Compile Include="F4_Content\View\AddContentUC.Designer.cs">
       <DependentUpon>AddContentUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="F4_Content\View\MultipleContentUC.cs">
+    <Compile Include="F4_Content\View\ContentUC_P.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="F4_Content\View\MultipleContentUC.Designer.cs">
-      <DependentUpon>MultipleContentUC.cs</DependentUpon>
+    <Compile Include="F4_Content\View\ContentUC_P.Designer.cs">
+      <DependentUpon>ContentUC_P.cs</DependentUpon>
     </Compile>
     <Compile Include="F4_Content\View\SingleContentUC.cs">
       <SubType>UserControl</SubType>
@@ -162,8 +166,8 @@
     <EmbeddedResource Include="F1_UserManager\View\LoginUC.resx">
       <DependentUpon>LoginUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F1_UserManager\View\ProfileUC.resx">
-      <DependentUpon>ProfileUC.cs</DependentUpon>
+    <EmbeddedResource Include="F1_UserManager\View\ProfileUC_P.resx">
+      <DependentUpon>ProfileUC_P.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F1_UserManager\View\SignInUC.resx">
       <DependentUpon>SignInUC.cs</DependentUpon>
@@ -177,11 +181,11 @@
     <EmbeddedResource Include="F2_Friendship\View\FriendRequestUC.resx">
       <DependentUpon>FriendRequestUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F2_Friendship\View\SearchUC.resx">
-      <DependentUpon>SearchUC.cs</DependentUpon>
+    <EmbeddedResource Include="F2_Friendship\View\SearchUC_P.resx">
+      <DependentUpon>SearchUC_P.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F3_Chat\View\ChatListUC.resx">
-      <DependentUpon>ChatListUC.cs</DependentUpon>
+    <EmbeddedResource Include="F3_Chat\View\ChatListUC_P.resx">
+      <DependentUpon>ChatListUC_P.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F3_Chat\View\ChatRoomUC.resx">
       <DependentUpon>ChatRoomUC.cs</DependentUpon>
@@ -189,8 +193,8 @@
     <EmbeddedResource Include="F4_Content\View\AddContentUC.resx">
       <DependentUpon>AddContentUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F4_Content\View\MultipleContentUC.resx">
-      <DependentUpon>MultipleContentUC.cs</DependentUpon>
+    <EmbeddedResource Include="F4_Content\View\ContentUC_P.resx">
+      <DependentUpon>ContentUC_P.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F4_Content\View\SingleContentUC.resx">
       <DependentUpon>SingleContentUC.cs</DependentUpon>
@@ -227,6 +231,33 @@
   <ItemGroup>
     <Folder Include="FileStorage\" />
     <Folder Include="Utility\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeButton_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfileButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfileButton_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchButton_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatButton_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dot.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NavBar.png" />

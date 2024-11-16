@@ -1,6 +1,6 @@
-﻿namespace UAS_DB_PamerYuk.F1_UserManager
+﻿namespace UAS_DB_PamerYuk.F2_Friendship.View
 {
-    partial class ProfileUC
+    partial class SearchUC_P
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // ProfileUC
+            // SearchUC_P
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ProfileUC";
-            this.Size = new System.Drawing.Size(400, 700);
-            this.Load += new System.EventHandler(this.ProfileUserControl_Load);
+            this.BackColor = System.Drawing.Color.Yellow;
+            this.Name = "SearchUC_P";
+            this.Size = new System.Drawing.Size(400, 638);
+            this.Load += new System.EventHandler(this.SearchUC_Load);
             this.ResumeLayout(false);
 
         }

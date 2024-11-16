@@ -4,14 +4,16 @@ using UAS_DB_PamerYuk.F4_Content;
 
 namespace UAS_DB_PamerYuk.F2_Friendship.View
 {
-    public partial class SearchUC : UserControl
+    public partial class SearchUC_P : UserControl
     {
         private readonly FriendshipService service;
+        private readonly MainForm mainForm;
 
-        public SearchUC(FriendshipService service)
+        public SearchUC_P(FriendshipService service, MainForm mainForm)
         {
             InitializeComponent();
             this.service = service;
+            this.mainForm = mainForm;
         }
 
         private void SearchUC_Load(object sender, EventArgs e)

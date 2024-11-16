@@ -5,9 +5,9 @@ namespace UAS_DB_PamerYuk
 {
     public class Connection
     {
-        private MySqlConnection koneksiDB;
+        private MySqlConnection dbConnection;
 
-        public MySqlConnection KoneksiDB { get => koneksiDB; set => koneksiDB = value; }
+        public MySqlConnection DbConnection { get => dbConnection; private set => dbConnection = value; }
 
         public Connection()
         {
@@ -23,13 +23,13 @@ namespace UAS_DB_PamerYuk
             // string pP = "";
 
             string conString = "Server=" + pS + ";Database=" + pD + ";Uid=" + pU + ";Pwd=" + pP + ";";
-            KoneksiDB = new MySqlConnection(conString);
+            DbConnection = new MySqlConnection(conString);
         }
 
         public void GetConnection()
         {
-            if (KoneksiDB.State == System.Data.ConnectionState.Open) KoneksiDB.Close();
-            KoneksiDB.Open();
+            if (DbConnection.State == System.Data.ConnectionState.Open) DbConnection.Close();
+            DbConnection.Open();
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace UAS_DB_PamerYuk.F4_Content.View
+﻿namespace UAS_DB_PamerYuk.F1_UserManager
 {
-    partial class MultipleContentUC
+    partial class ProfileUC_P
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // MultipleContentUC
+            // ProfileUC_P
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "MultipleContentUC";
-            this.Size = new System.Drawing.Size(400, 700);
-            this.Load += new System.EventHandler(this.MultipleContentUC_Load);
+            this.BackColor = System.Drawing.Color.Red;
+            this.Name = "ProfileUC_P";
+            this.Size = new System.Drawing.Size(400, 638);
+            this.Load += new System.EventHandler(this.ProfileUserControl_Load);
             this.ResumeLayout(false);
 
         }
