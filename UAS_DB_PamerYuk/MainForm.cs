@@ -94,7 +94,7 @@ namespace UAS_DB_PamerYuk
             profileButton.Image = Properties.Resources.ProfileButton_clicked;
             ResetButton();
 
-            UserManagerService service = new UserManagerService();
+            UserManagerService service = new UserManagerService(connection.DbConnection);
             ProfileUC_P uc = new ProfileUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);
