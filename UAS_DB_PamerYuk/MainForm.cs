@@ -30,7 +30,7 @@ namespace UAS_DB_PamerYuk
                 Connection connection = new Connection();
                 MessageBox.Show("Connection success!");
 
-                ContentService service = new ContentService();
+                ContentService service = new ContentService(connection.DbConnection);
                 ContentUC_P uc = new ContentUC_P(service, this);
 
                 currentMenu = uc;
@@ -49,7 +49,7 @@ namespace UAS_DB_PamerYuk
             homeButton.Image = Properties.Resources.HomeButton_clicked;
             ResetButton();
 
-            ContentService service = new ContentService();
+            ContentService service = new ContentService(connection.DbConnection);
             ContentUC_P uc = new ContentUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);
@@ -64,7 +64,7 @@ namespace UAS_DB_PamerYuk
             searchButton.Image = Properties.Resources.SearchButton_clicked;
             ResetButton();
 
-            FriendshipService service = new FriendshipService();
+            FriendshipService service = new FriendshipService(connection.DbConnection);
             SearchUC_P uc = new SearchUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);
@@ -79,7 +79,7 @@ namespace UAS_DB_PamerYuk
             chatButton.Image = Properties.Resources.ChatButton_clicked;
             ResetButton();
 
-            ChatService service = new ChatService();
+            ChatService service = new ChatService(connection.DbConnection);
             ChatListUC_P uc = new ChatListUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);
