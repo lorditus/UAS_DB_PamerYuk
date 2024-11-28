@@ -30,8 +30,7 @@ namespace UAS_DB_PamerYuk
                 Connection connection = new Connection();
                 MessageBox.Show("Connection success!");
 
-                ContentRepo repo = new ContentRepo(connection.DbConnection);
-                ContentService service = new ContentService(repo);
+                ContentService service = new ContentService();
                 ContentUC_P uc = new ContentUC_P(service, this);
 
                 currentMenu = uc;
@@ -50,8 +49,7 @@ namespace UAS_DB_PamerYuk
             homeButton.Image = Properties.Resources.HomeButton_clicked;
             ResetButton();
 
-            ContentRepo repo = new ContentRepo(connection.DbConnection);
-            ContentService service = new ContentService(repo);
+            ContentService service = new ContentService();
             ContentUC_P uc = new ContentUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);
@@ -66,8 +64,7 @@ namespace UAS_DB_PamerYuk
             searchButton.Image = Properties.Resources.SearchButton_clicked;
             ResetButton();
 
-            FriendshipRepo repo = new FriendshipRepo(connection.DbConnection);
-            FriendshipService service = new FriendshipService(repo);
+            FriendshipService service = new FriendshipService();
             SearchUC_P uc = new SearchUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);
@@ -82,8 +79,7 @@ namespace UAS_DB_PamerYuk
             chatButton.Image = Properties.Resources.ChatButton_clicked;
             ResetButton();
 
-            ChatRepo repo = new ChatRepo(connection.DbConnection);
-            ChatService service = new ChatService(repo);
+            ChatService service = new ChatService();
             ChatListUC_P uc = new ChatListUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);
@@ -98,8 +94,7 @@ namespace UAS_DB_PamerYuk
             profileButton.Image = Properties.Resources.ProfileButton_clicked;
             ResetButton();
 
-            UserManagerRepo repo = new UserManagerRepo(connection.DbConnection);
-            UserManagerService service = new UserManagerService(repo);
+            UserManagerService service = new UserManagerService();
             ProfileUC_P uc = new ProfileUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);

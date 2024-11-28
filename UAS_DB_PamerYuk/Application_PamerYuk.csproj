@@ -117,13 +117,9 @@
     <Compile Include="F3_Chat\View\ChatRoomUC.Designer.cs">
       <DependentUpon>ChatRoomUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="F4_Content\ContentRepo.cs" />
     <Compile Include="F2_Friendship\FriendshipService.cs" />
-    <Compile Include="F2_Friendship\FriendshipRepo.cs" />
     <Compile Include="F4_Content\ContentService.cs" />
-    <Compile Include="F3_Chat\ChatRepo.cs" />
     <Compile Include="F1_UserManager\UserManagerService.cs" />
-    <Compile Include="F1_UserManager\UserManagerRepo.cs" />
     <Compile Include="F3_Chat\ChatService.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="F4_Content\View\AddContentUC.cs">

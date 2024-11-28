@@ -1,11 +1,22 @@
-﻿using UAS_DB_PamerYuk.F4_Content;
+﻿using MySql.Data.MySqlClient;
+using UAS_DB_PamerYuk.Repository.DAO;
 
 namespace UAS_DB_PamerYuk.F2_Friendship
 {
     public class ContentService
     {
-        private readonly ContentRepo repo;
+        private readonly UserDAO userDAO;
+        private readonly TemanDAO temanDAO;
+        private readonly KontenDAO kontenDAO;
+        private readonly KomenDAO komenDAO;
+        private readonly TagDAO tagDAO;
 
-        public ContentService(ContentRepo repo) { this.repo = repo; }
+        public ContentService(MySqlConnection connection)
+        {
+            userDAO = new UserDAO(connection);
+            kontenDAO = new KontenDAO(connection);
+            komenDAO = new KomenDAO(connection);
+            tagDAO = new TagDAO(connection);
+        }
     }
 }
