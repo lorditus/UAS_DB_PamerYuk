@@ -24,6 +24,8 @@ namespace UAS_DB_PamerYuk
 
             string conString = "Server=" + pS + ";Database=" + pD + ";Uid=" + pU + ";Pwd=" + pP + ";";
             DbConnection = new MySqlConnection(conString);
+
+            GetConnection();
         }
 
         public void GetConnection()

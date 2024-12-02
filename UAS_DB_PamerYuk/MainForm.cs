@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
 using UAS_DB_PamerYuk.F1_UserManager;
 using UAS_DB_PamerYuk.F2_Friendship;
@@ -25,21 +26,11 @@ namespace UAS_DB_PamerYuk
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            try
-            {
-                Connection connection = new Connection();
-                MessageBox.Show("Connection success!");
+            ContentService service = new ContentService(connection.DbConnection);
+            ContentUC_P uc = new ContentUC_P(service, this);
 
-                ContentService service = new ContentService(connection.DbConnection);
-                ContentUC_P uc = new ContentUC_P(service, this);
-
-                currentMenu = uc;
-                mainPanel.Controls.Add(uc);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ConnectionFailed!");
-            }
+            currentMenu = uc;
+            mainPanel.Controls.Add(uc);
         }
 
         private void homeButton_OnClick(object sender, EventArgs e)
@@ -94,7 +85,7 @@ namespace UAS_DB_PamerYuk
             profileButton.Image = Properties.Resources.ProfileButton_clicked;
             ResetButton();
 
-            UserManagerService service = new UserManagerService();
+            UserManagerService service = new UserManagerService(connection.DbConnection);
             ProfileUC_P uc = new ProfileUC_P(service, this);
 
             mainPanel.Controls.Remove(currentMenu);
