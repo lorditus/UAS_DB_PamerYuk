@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "ProfileUC_P";
             this.Size = new System.Drawing.Size(400, 638);
             this.Load += new System.EventHandler(this.ProfileUserControl_Load);

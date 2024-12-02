@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
 
 namespace UAS_DB_PamerYuk
@@ -11,13 +12,23 @@ namespace UAS_DB_PamerYuk
         [STAThread]
         static void Main()
         {
+            Connection connection;
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Connection connection = new Connection();
-            MainForm mainForm = new MainForm(connection);
+            try
+            {
+                connection = new Connection();
+                MessageBox.Show("Connection success!");
 
-            Application.Run(mainForm);
+                MainForm mainForm = new MainForm(connection);
+                Application.Run(mainForm);
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Connection Failed!");
+            }
         }
     }
 }
