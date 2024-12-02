@@ -28,13 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.flp = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
+            // 
+            // flp
+            // 
+            this.flp.AutoScroll = true;
+            this.flp.Location = new System.Drawing.Point(0, 0);
+            this.flp.Name = "flp";
+            this.flp.Size = new System.Drawing.Size(400, 638);
+            this.flp.TabIndex = 0;
             // 
             // ContentUC_P
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Controls.Add(this.flp);
             this.Name = "ContentUC_P";
             this.Size = new System.Drawing.Size(400, 638);
             this.Load += new System.EventHandler(this.MultipleContentUC_Load);
@@ -43,5 +53,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel flp;
     }
 }

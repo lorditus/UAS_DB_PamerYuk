@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using UAS_DB_PamerYuk.F2_Friendship;
+using UAS_DB_PamerYuk.Utility;
 
 namespace UAS_DB_PamerYuk.F4_Content.View
 {
@@ -18,7 +19,7 @@ namespace UAS_DB_PamerYuk.F4_Content.View
 
         private void TagUC_Load(object sender, EventArgs e)
         {
-
+            BackColor = ColorUtil.palette["soft-white"];
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using UAS_DB_PamerYuk.F3_Chat;
+using UAS_DB_PamerYuk.Utility;
 
 namespace UAS_DB_PamerYuk.F1_UserManager
 {
@@ -18,7 +19,7 @@ namespace UAS_DB_PamerYuk.F1_UserManager
 
         private void ProfileUserControl_Load(object sender, EventArgs e)
         {
-
+            BackColor = ColorUtil.palette["soft-white"];
         }
     }
 }

@@ -118,11 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AddContentButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddContentButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ChatButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChatButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ChatButton_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChatButton_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommentButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CommentButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,14 +139,62 @@
   <data name="HomeButton_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HomeButton_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="K_PP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_PP.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LikeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LikeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LikeButton_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LikeButton_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NavBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NavBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NotificationButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NotificationButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OptionsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OptionsButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ProfileButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ProfileButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ProfileButton_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ProfileButton_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profileFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profileFrame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleContent1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleContent1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleContent2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleContent2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleContent3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleContent3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleContent4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleContent4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleContent5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleContent5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleUser1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleUser1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleUser2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleUser2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleUser3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleUser3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleUser4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleUser4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sampleUser5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sampleUser5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SearchButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SearchButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

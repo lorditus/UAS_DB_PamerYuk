@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -134,6 +135,12 @@
     <Compile Include="F4_Content\View\ContentUC_P.Designer.cs">
       <DependentUpon>ContentUC_P.cs</DependentUpon>
     </Compile>
+    <Compile Include="F4_Content\View\HomeMenuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F4_Content\View\HomeMenuUC.Designer.cs">
+      <DependentUpon>HomeMenuUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="F4_Content\View\SingleContentUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,6 +166,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utility\ColorUtil.cs" />
     <EmbeddedResource Include="F1_UserManager\View\LoginUC.resx">
       <DependentUpon>LoginUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F4_Content\View\ContentUC_P.resx">
       <DependentUpon>ContentUC_P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F4_Content\View\HomeMenuUC.resx">
+      <DependentUpon>HomeMenuUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F4_Content\View\SingleContentUC.resx">
       <DependentUpon>SingleContentUC.cs</DependentUpon>
@@ -226,7 +237,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FileStorage\" />
-    <Folder Include="Utility\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\HomeButton.png" />
@@ -257,6 +267,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NavBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K_PP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\186668.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleUser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleUser2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleUser3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleContent2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleContent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profileFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleUser5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleUser4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleContent5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleContent3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleContent4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CommentButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LikeButton_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LikeButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddContentButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotificationButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
