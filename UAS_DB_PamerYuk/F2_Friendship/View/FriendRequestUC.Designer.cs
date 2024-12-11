@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "FriendRequestUC";
-            this.Size = new System.Drawing.Size(400, 638);
+            this.Size = new System.Drawing.Size(400, 645);
             this.Load += new System.EventHandler(this.FriendRequestUC_Load);
             this.ResumeLayout(false);
 

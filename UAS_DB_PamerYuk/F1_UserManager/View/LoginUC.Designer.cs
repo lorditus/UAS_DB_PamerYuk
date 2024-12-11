@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "LoginUC";
-            this.Size = new System.Drawing.Size(400, 638);
+            this.Size = new System.Drawing.Size(400, 645);
             this.Load += new System.EventHandler(this.LoginUserControl_Load);
             this.ResumeLayout(false);
 

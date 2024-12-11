@@ -55,14 +55,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\KisahHidupDAO.cs" />
     <Compile Include="DAO\KomenDAO.cs" />
     <Compile Include="DAO\KontenDAO.cs" />
-    <Compile Include="DAO\KotaDAO.cs" />
-    <Compile Include="DAO\OrganisasiDAO.cs" />
     <Compile Include="DAO\PercakapanDAO.cs" />
     <Compile Include="DAO\TagDAO.cs" />
-    <Compile Include="DAO\TemanDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="F1_UserManager\View\LoginUC.cs">
       <SubType>UserControl</SubType>
@@ -123,12 +119,6 @@
     <Compile Include="F1_UserManager\UserManagerService.cs" />
     <Compile Include="F3_Chat\ChatService.cs" />
     <Compile Include="Connection.cs" />
-    <Compile Include="F4_Content\View\AddContentUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="F4_Content\View\AddContentUC.Designer.cs">
-      <DependentUpon>AddContentUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="F4_Content\View\ContentUC_P.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,6 +131,7 @@
     <Compile Include="F4_Content\View\HomeMenuUC.Designer.cs">
       <DependentUpon>HomeMenuUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility\ControlAdapter.cs" />
     <Compile Include="F4_Content\View\SingleContentUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -193,9 +184,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F3_Chat\View\ChatRoomUC.resx">
       <DependentUpon>ChatRoomUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="F4_Content\View\AddContentUC.resx">
-      <DependentUpon>AddContentUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F4_Content\View\ContentUC_P.resx">
       <DependentUpon>ContentUC_P.cs</DependentUpon>
@@ -324,6 +312,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NotificationButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UploadPane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContentSendButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddPhotoButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddVideoButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

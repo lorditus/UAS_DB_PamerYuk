@@ -73,6 +73,26 @@ namespace UAS_DB_PamerYuk.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddPhotoButton {
+            get {
+                object obj = ResourceManager.GetObject("AddPhotoButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AddVideoButton {
+            get {
+                object obj = ResourceManager.GetObject("AddVideoButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChatButton {
             get {
                 object obj = ResourceManager.GetObject("ChatButton", resourceCulture);
@@ -96,6 +116,16 @@ namespace UAS_DB_PamerYuk.Properties {
         internal static System.Drawing.Bitmap CommentButton {
             get {
                 object obj = ResourceManager.GetObject("CommentButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ContentSendButton {
+            get {
+                object obj = ResourceManager.GetObject("ContentSendButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +203,9 @@ namespace UAS_DB_PamerYuk.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NotificationButton {
+        internal static System.Drawing.Bitmap notification {
             get {
-                object obj = ResourceManager.GetObject("NotificationButton", resourceCulture);
+                object obj = ResourceManager.GetObject("notification", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,6 +366,16 @@ namespace UAS_DB_PamerYuk.Properties {
         internal static System.Drawing.Bitmap SearchButton_clicked {
             get {
                 object obj = ResourceManager.GetObject("SearchButton_clicked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UploadPane {
+            get {
+                object obj = ResourceManager.GetObject("UploadPane", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

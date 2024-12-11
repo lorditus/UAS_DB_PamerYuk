@@ -35,7 +35,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label_postedOn = new System.Windows.Forms.Label();
-            this.label_desc = new System.Windows.Forms.Label();
+            this.label_caption = new System.Windows.Forms.Label();
             this.optionsButton = new System.Windows.Forms.PictureBox();
             this.commentButton = new System.Windows.Forms.PictureBox();
             this.likeButton = new System.Windows.Forms.PictureBox();
@@ -99,16 +99,16 @@
             this.label_postedOn.TabIndex = 11;
             this.label_postedOn.Text = "2 days ago";
             // 
-            // label_desc
+            // label_caption
             // 
-            this.label_desc.BackColor = System.Drawing.Color.Transparent;
-            this.label_desc.Location = new System.Drawing.Point(11, 494);
-            this.label_desc.Margin = new System.Windows.Forms.Padding(0);
-            this.label_desc.Name = "label_desc";
-            this.label_desc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label_desc.Size = new System.Drawing.Size(376, 1);
-            this.label_desc.TabIndex = 12;
-            this.label_desc.Text = "In a quiet alley, a man bled upon a hidden gem—a cozy coffee shop run by a kind ," +
+            this.label_caption.BackColor = System.Drawing.Color.Transparent;
+            this.label_caption.Location = new System.Drawing.Point(11, 494);
+            this.label_caption.Margin = new System.Windows.Forms.Padding(0);
+            this.label_caption.Name = "label_caption";
+            this.label_caption.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label_caption.Size = new System.Drawing.Size(376, 0);
+            this.label_caption.TabIndex = 12;
+            this.label_caption.Text = "In a quiet alley, a man bled upon a hidden gem—a cozy coffee shop run by a kind ," +
     " timeless ambiance, surrounded by warm wooden decor and vintage photographs.";
             // 
             // optionsButton
@@ -181,7 +181,7 @@
             this.Controls.Add(this.optionsButton);
             this.Controls.Add(this.commentButton);
             this.Controls.Add(this.likeButton);
-            this.Controls.Add(this.label_desc);
+            this.Controls.Add(this.label_caption);
             this.Controls.Add(this.label_postedOn);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -216,7 +216,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label_postedOn;
-        private System.Windows.Forms.Label label_desc;
+        private System.Windows.Forms.Label label_caption;
         private System.Windows.Forms.PictureBox likeButton;
         private System.Windows.Forms.PictureBox commentButton;
         private System.Windows.Forms.PictureBox optionsButton;

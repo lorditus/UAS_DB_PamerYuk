@@ -33,7 +33,7 @@ namespace UAS_DB_PamerYuk
             mainPanel.Controls.Add(uc);
         }
 
-        private void homeButton_OnClick(object sender, EventArgs e)
+        private void HomeButton_OnClick(object sender, EventArgs e)
         {
             if (currentMenu is ContentUC_P) return;
 
@@ -48,7 +48,7 @@ namespace UAS_DB_PamerYuk
             mainPanel.Controls.Add(uc);
         }
 
-        private void searchButton_OnClick(object sender, EventArgs e)
+        private void SearchButton_OnClick(object sender, EventArgs e)
         {
             if (currentMenu is SearchUC_P) return;
 
@@ -63,7 +63,7 @@ namespace UAS_DB_PamerYuk
             mainPanel.Controls.Add(uc);
         }
 
-        private void chatButton_OnClick(object sender, EventArgs e)
+        private void ChatButton_OnClick(object sender, EventArgs e)
         {
             if (currentMenu is ChatListUC_P) return;
 
@@ -78,7 +78,7 @@ namespace UAS_DB_PamerYuk
             mainPanel.Controls.Add(uc);
         }
 
-        private void profileButton_OnClick(object sender, EventArgs e)
+        private void ProfileButton_OnClick(object sender, EventArgs e)
         {
             if (currentMenu is ProfileUC_P) return;
 
@@ -93,42 +93,42 @@ namespace UAS_DB_PamerYuk
             mainPanel.Controls.Add(uc);
         }
 
-        private void homeButton_MouseEnter(object sender, EventArgs e)
+        private void HomeButton_MouseEnter(object sender, EventArgs e)
         {
             homeButton.Image = Properties.Resources.HomeButton_clicked;
         }
 
-        private void searchButton_MouseEnter(object sender, EventArgs e)
+        private void SearchButton_MouseEnter(object sender, EventArgs e)
         {
             searchButton.Image = Properties.Resources.SearchButton_clicked;
         }
 
-        private void chatButton_MouseEnter(object sender, EventArgs e)
+        private void ChatButton_MouseEnter(object sender, EventArgs e)
         {
             chatButton.Image = Properties.Resources.ChatButton_clicked;
         }
 
-        private void profileButton_MouseEnter(object sender, EventArgs e)
+        private void ProfileButton_MouseEnter(object sender, EventArgs e)
         {
             profileButton.Image = Properties.Resources.ProfileButton_clicked;
         }
 
-        private void homeButton_MouseLeave(object sender, EventArgs e)
+        private void HomeButton_MouseLeave(object sender, EventArgs e)
         {
             if (!(currentMenu is ContentUC_P)) homeButton.Image = Properties.Resources.HomeButton;
         }
 
-        private void searchButton_MouseLeave(object sender, EventArgs e)
+        private void SearchButton_MouseLeave(object sender, EventArgs e)
         {
             if (!(currentMenu is SearchUC_P)) searchButton.Image = Properties.Resources.SearchButton;
         }
 
-        private void chatButton_MouseLeave(object sender, EventArgs e)
+        private void ChatButton_MouseLeave(object sender, EventArgs e)
         {
             if (!(currentMenu is ChatListUC_P)) chatButton.Image = Properties.Resources.ChatButton;
         }
 
-        private void profileButton_MouseLeave(object sender, EventArgs e)
+        private void ProfileButton_MouseLeave(object sender, EventArgs e)
         {
             if (!(currentMenu is ProfileUC_P)) profileButton.Image = Properties.Resources.ProfileButton;
         }

@@ -57,5 +57,10 @@ namespace UAS_DB_PamerYuk.F4_Content.View
         {
 
         }
+
+        private void flp_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

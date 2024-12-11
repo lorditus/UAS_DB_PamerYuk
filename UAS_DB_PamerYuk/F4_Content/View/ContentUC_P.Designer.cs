@@ -36,8 +36,9 @@
             this.flp.AutoScroll = true;
             this.flp.Location = new System.Drawing.Point(0, 0);
             this.flp.Name = "flp";
-            this.flp.Size = new System.Drawing.Size(400, 638);
+            this.flp.Size = new System.Drawing.Size(400, 645);
             this.flp.TabIndex = 0;
+            this.flp.Paint += new System.Windows.Forms.PaintEventHandler(this.flp_Paint);
             // 
             // ContentUC_P
             // 
@@ -46,7 +47,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.flp);
             this.Name = "ContentUC_P";
-            this.Size = new System.Drawing.Size(400, 638);
+            this.Size = new System.Drawing.Size(400, 645);
             this.Load += new System.EventHandler(this.MultipleContentUC_Load);
             this.ResumeLayout(false);
 
