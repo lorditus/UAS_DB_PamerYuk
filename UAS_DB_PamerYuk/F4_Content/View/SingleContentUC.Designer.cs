@@ -54,38 +54,43 @@
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(60, 24);
+            this.usernameLabel.Location = new System.Drawing.Point(80, 30);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(76, 16);
+            this.usernameLabel.Size = new System.Drawing.Size(94, 20);
             this.usernameLabel.TabIndex = 4;
             this.usernameLabel.Text = "bn_sj2013";
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(54, 9);
+            this.panel3.Location = new System.Drawing.Point(72, 11);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(4, 46);
+            this.panel3.Size = new System.Drawing.Size(5, 57);
             this.panel3.TabIndex = 7;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(8, 9);
+            this.panel4.Location = new System.Drawing.Point(11, 11);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(4, 46);
+            this.panel4.Size = new System.Drawing.Size(5, 57);
             this.panel4.TabIndex = 8;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(10, 8);
+            this.panel5.Location = new System.Drawing.Point(13, 10);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(46, 3);
+            this.panel5.Size = new System.Drawing.Size(61, 4);
             this.panel5.TabIndex = 9;
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(8, 53);
+            this.panel6.Location = new System.Drawing.Point(11, 65);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(46, 3);
+            this.panel6.Size = new System.Drawing.Size(61, 4);
             this.panel6.TabIndex = 10;
             // 
             // label_postedOn
@@ -93,20 +98,21 @@
             this.label_postedOn.AutoSize = true;
             this.label_postedOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_postedOn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label_postedOn.Location = new System.Drawing.Point(12, 498);
+            this.label_postedOn.Location = new System.Drawing.Point(16, 613);
+            this.label_postedOn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_postedOn.Name = "label_postedOn";
-            this.label_postedOn.Size = new System.Drawing.Size(49, 12);
+            this.label_postedOn.Size = new System.Drawing.Size(66, 15);
             this.label_postedOn.TabIndex = 11;
             this.label_postedOn.Text = "2 days ago";
             // 
             // label_caption
             // 
             this.label_caption.BackColor = System.Drawing.Color.Transparent;
-            this.label_caption.Location = new System.Drawing.Point(11, 494);
+            this.label_caption.Location = new System.Drawing.Point(15, 608);
             this.label_caption.Margin = new System.Windows.Forms.Padding(0);
             this.label_caption.Name = "label_caption";
             this.label_caption.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label_caption.Size = new System.Drawing.Size(376, 0);
+            this.label_caption.Size = new System.Drawing.Size(501, 0);
             this.label_caption.TabIndex = 12;
             this.label_caption.Text = "In a quiet alley, a man bled upon a hidden gem—a cozy coffee shop run by a kind ," +
     " timeless ambiance, surrounded by warm wooden decor and vintage photographs.";
@@ -116,9 +122,10 @@
             this.optionsButton.BackgroundImage = global::UAS_DB_PamerYuk.Properties.Resources.OptionsButton;
             this.optionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.optionsButton.InitialImage = global::UAS_DB_PamerYuk.Properties.Resources.OptionsButton;
-            this.optionsButton.Location = new System.Drawing.Point(350, 23);
+            this.optionsButton.Location = new System.Drawing.Point(467, 28);
+            this.optionsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.optionsButton.Name = "optionsButton";
-            this.optionsButton.Size = new System.Drawing.Size(15, 15);
+            this.optionsButton.Size = new System.Drawing.Size(20, 18);
             this.optionsButton.TabIndex = 15;
             this.optionsButton.TabStop = false;
             // 
@@ -126,9 +133,10 @@
             // 
             this.commentButton.BackgroundImage = global::UAS_DB_PamerYuk.Properties.Resources.CommentButton;
             this.commentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.commentButton.Location = new System.Drawing.Point(62, 453);
+            this.commentButton.Location = new System.Drawing.Point(83, 558);
+            this.commentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.commentButton.Name = "commentButton";
-            this.commentButton.Size = new System.Drawing.Size(30, 30);
+            this.commentButton.Size = new System.Drawing.Size(40, 37);
             this.commentButton.TabIndex = 14;
             this.commentButton.TabStop = false;
             // 
@@ -136,9 +144,10 @@
             // 
             this.likeButton.BackgroundImage = global::UAS_DB_PamerYuk.Properties.Resources.LikeButton;
             this.likeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.likeButton.Location = new System.Drawing.Point(14, 453);
+            this.likeButton.Location = new System.Drawing.Point(19, 558);
+            this.likeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.likeButton.Name = "likeButton";
-            this.likeButton.Size = new System.Drawing.Size(30, 30);
+            this.likeButton.Size = new System.Drawing.Size(40, 37);
             this.likeButton.TabIndex = 13;
             this.likeButton.TabStop = false;
             // 
@@ -148,17 +157,19 @@
             this.pPictPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pPictPanel.BackgroundImage")));
             this.pPictPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pPictPanel.Controls.Add(this.pictureBox2);
-            this.pPictPanel.Location = new System.Drawing.Point(10, 9);
+            this.pPictPanel.Location = new System.Drawing.Point(13, 11);
+            this.pPictPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pPictPanel.Name = "pPictPanel";
-            this.pPictPanel.Size = new System.Drawing.Size(46, 46);
+            this.pPictPanel.Size = new System.Drawing.Size(61, 57);
             this.pPictPanel.TabIndex = 6;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::UAS_DB_PamerYuk.Properties.Resources.profileFrame;
-            this.pictureBox2.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox2.Size = new System.Drawing.Size(56, 52);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
@@ -166,16 +177,17 @@
             // 
             this.contentPictBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.contentPictBox.Image = global::UAS_DB_PamerYuk.Properties.Resources.sampleContent1;
-            this.contentPictBox.Location = new System.Drawing.Point(0, 61);
+            this.contentPictBox.Location = new System.Drawing.Point(0, 75);
+            this.contentPictBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.contentPictBox.Name = "contentPictBox";
-            this.contentPictBox.Size = new System.Drawing.Size(382, 382);
+            this.contentPictBox.Size = new System.Drawing.Size(509, 470);
             this.contentPictBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.contentPictBox.TabIndex = 0;
             this.contentPictBox.TabStop = false;
             // 
             // SingleContentUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.optionsButton);
@@ -190,8 +202,9 @@
             this.Controls.Add(this.pPictPanel);
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.contentPictBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SingleContentUC";
-            this.Size = new System.Drawing.Size(382, 530);
+            this.Size = new System.Drawing.Size(509, 652);
             this.Load += new System.EventHandler(this.SingleContentUC_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.On_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.optionsButton)).EndInit();

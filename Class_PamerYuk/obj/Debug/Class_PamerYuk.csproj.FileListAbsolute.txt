@@ -4,3 +4,9 @@ D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\Class_Pam
 D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\Class_PamerYuk\obj\Debug\Class_PamerYuk.csproj.CoreCompileInputs.cache
 D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\Class_PamerYuk\obj\Debug\Class_PamerYuk.dll
 D:\KEVIN\Recent Activity\DB_SecondHalf\UAS_DB_PamerYuk\UAS_DB_PamerYuk\Class_PamerYuk\obj\Debug\Class_PamerYuk.pdb
+C:\Users\Daniel Yang\OneDrive\Dokumen\SEMESTER 3\DATABASE\UAS_DB_PamerYuk\Class_PamerYuk\bin\Debug\Class_PamerYuk.dll
+C:\Users\Daniel Yang\OneDrive\Dokumen\SEMESTER 3\DATABASE\UAS_DB_PamerYuk\Class_PamerYuk\bin\Debug\Class_PamerYuk.pdb
+C:\Users\Daniel Yang\OneDrive\Dokumen\SEMESTER 3\DATABASE\UAS_DB_PamerYuk\Class_PamerYuk\obj\Debug\Class_PamerYuk.csproj.AssemblyReference.cache
+C:\Users\Daniel Yang\OneDrive\Dokumen\SEMESTER 3\DATABASE\UAS_DB_PamerYuk\Class_PamerYuk\obj\Debug\Class_PamerYuk.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Yang\OneDrive\Dokumen\SEMESTER 3\DATABASE\UAS_DB_PamerYuk\Class_PamerYuk\obj\Debug\Class_PamerYuk.dll
+C:\Users\Daniel Yang\OneDrive\Dokumen\SEMESTER 3\DATABASE\UAS_DB_PamerYuk\Class_PamerYuk\obj\Debug\Class_PamerYuk.pdb

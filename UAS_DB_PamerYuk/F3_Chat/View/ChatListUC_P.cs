@@ -21,5 +21,10 @@ namespace UAS_DB_PamerYuk.F3_Chat.View
         {
             BackColor = ColorUtil.palette["soft-white"];
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

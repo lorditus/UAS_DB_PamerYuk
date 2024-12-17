@@ -48,7 +48,7 @@ namespace UAS_DB_PamerYuk.F4_Content.View
                 panel.SetBounds(0, 0, scu.Size.Width, scu.Size.Height);
                 panel.Controls.Add(scu);
 
-                flp.Controls.Add(panel);
+                flp.Controls.Add(scu);
             }
 
         }

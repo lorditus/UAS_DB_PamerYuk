@@ -12,7 +12,7 @@ namespace UAS_DB_PamerYuk.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
     internal sealed partial class DB : global::System.Configuration.ApplicationSettingsBase {
         
         private static DB defaultInstance = ((DB)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new DB())));
@@ -37,7 +37,7 @@ namespace UAS_DB_PamerYuk.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("uas_pameryuk")]
+        [global::System.Configuration.DefaultSettingValueAttribute("percakapan")]
         public string DbName {
             get {
                 return ((string)(this["DbName"]));

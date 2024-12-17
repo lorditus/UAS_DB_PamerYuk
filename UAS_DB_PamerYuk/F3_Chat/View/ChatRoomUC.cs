@@ -21,5 +21,10 @@ namespace UAS_DB_PamerYuk.F3_Chat.View
         {
             BackColor = ColorUtil.palette["soft-white"];
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BackgroundImage = Properties.Resources.HomeButton_clicked;
+        }
     }
 }
