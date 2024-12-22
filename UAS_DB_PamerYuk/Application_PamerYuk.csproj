@@ -116,6 +116,12 @@
       <DependentUpon>ChatRoomUC.cs</DependentUpon>
     </Compile>
     <Compile Include="F2_Friendship\FriendshipService.cs" />
+    <Compile Include="F3_Chat\View\SingleContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F3_Chat\View\SingleContact.Designer.cs">
+      <DependentUpon>SingleContact.cs</DependentUpon>
+    </Compile>
     <Compile Include="F4_Content\ContentService.cs" />
     <Compile Include="F1_UserManager\UserManagerService.cs" />
     <Compile Include="F3_Chat\ChatService.cs" />
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F3_Chat\View\ChatRoomUC.resx">
       <DependentUpon>ChatRoomUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F3_Chat\View\SingleContact.resx">
+      <DependentUpon>SingleContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F4_Content\View\ContentUC_P.resx">
       <DependentUpon>ContentUC_P.cs</DependentUpon>

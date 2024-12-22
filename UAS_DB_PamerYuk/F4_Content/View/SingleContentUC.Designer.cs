@@ -64,7 +64,7 @@
             // panel3
             // 
             this.panel3.Location = new System.Drawing.Point(72, 11);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(5, 57);
             this.panel3.TabIndex = 7;
@@ -72,7 +72,7 @@
             // panel4
             // 
             this.panel4.Location = new System.Drawing.Point(11, 11);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 57);
             this.panel4.TabIndex = 8;
@@ -80,7 +80,7 @@
             // panel5
             // 
             this.panel5.Location = new System.Drawing.Point(13, 10);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(61, 4);
             this.panel5.TabIndex = 9;
@@ -88,7 +88,7 @@
             // panel6
             // 
             this.panel6.Location = new System.Drawing.Point(11, 65);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(61, 4);
             this.panel6.TabIndex = 10;
@@ -123,7 +123,7 @@
             this.optionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.optionsButton.InitialImage = global::UAS_DB_PamerYuk.Properties.Resources.OptionsButton;
             this.optionsButton.Location = new System.Drawing.Point(467, 28);
-            this.optionsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.optionsButton.Margin = new System.Windows.Forms.Padding(4);
             this.optionsButton.Name = "optionsButton";
             this.optionsButton.Size = new System.Drawing.Size(20, 18);
             this.optionsButton.TabIndex = 15;
@@ -134,7 +134,7 @@
             this.commentButton.BackgroundImage = global::UAS_DB_PamerYuk.Properties.Resources.CommentButton;
             this.commentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.commentButton.Location = new System.Drawing.Point(83, 558);
-            this.commentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.commentButton.Margin = new System.Windows.Forms.Padding(4);
             this.commentButton.Name = "commentButton";
             this.commentButton.Size = new System.Drawing.Size(40, 37);
             this.commentButton.TabIndex = 14;
@@ -145,7 +145,7 @@
             this.likeButton.BackgroundImage = global::UAS_DB_PamerYuk.Properties.Resources.LikeButton;
             this.likeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.likeButton.Location = new System.Drawing.Point(19, 558);
-            this.likeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.likeButton.Margin = new System.Windows.Forms.Padding(4);
             this.likeButton.Name = "likeButton";
             this.likeButton.Size = new System.Drawing.Size(40, 37);
             this.likeButton.TabIndex = 13;
@@ -158,7 +158,7 @@
             this.pPictPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pPictPanel.Controls.Add(this.pictureBox2);
             this.pPictPanel.Location = new System.Drawing.Point(13, 11);
-            this.pPictPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pPictPanel.Margin = new System.Windows.Forms.Padding(4);
             this.pPictPanel.Name = "pPictPanel";
             this.pPictPanel.Size = new System.Drawing.Size(61, 57);
             this.pPictPanel.TabIndex = 6;
@@ -166,8 +166,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::UAS_DB_PamerYuk.Properties.Resources.profileFrame;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(56, 52);
             this.pictureBox2.TabIndex = 7;
@@ -178,7 +178,7 @@
             this.contentPictBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.contentPictBox.Image = global::UAS_DB_PamerYuk.Properties.Resources.sampleContent1;
             this.contentPictBox.Location = new System.Drawing.Point(0, 75);
-            this.contentPictBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.contentPictBox.Margin = new System.Windows.Forms.Padding(4);
             this.contentPictBox.Name = "contentPictBox";
             this.contentPictBox.Size = new System.Drawing.Size(509, 470);
             this.contentPictBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -202,7 +202,7 @@
             this.Controls.Add(this.pPictPanel);
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.contentPictBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SingleContentUC";
             this.Size = new System.Drawing.Size(509, 652);
             this.Load += new System.EventHandler(this.SingleContentUC_Load);

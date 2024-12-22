@@ -33,5 +33,13 @@ namespace UAS_DB_PamerYuk
             if (DbConnection.State == System.Data.ConnectionState.Open) DbConnection.Close();
             DbConnection.Open();
         }
+
+        public static MySqlDataReader JalankanSelect(string command)
+        {
+            Connection k = new Connection();
+            MySqlCommand cmd = new MySqlCommand(command, k.dbConnection);
+            MySqlDataReader hasil = cmd.ExecuteReader();
+            return hasil;
+        }
     }
 }

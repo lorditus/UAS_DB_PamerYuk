@@ -23,7 +23,7 @@ namespace Class_PamerYuk
             WaktuKirim = waktuKirim;
         }
         #endregion
-
+        
         #region Property
         public int Id
         {
@@ -72,6 +72,10 @@ namespace Class_PamerYuk
                 else waktuKirim = value;
             } 
         }
+        #endregion
+
+        #region METHOD
+        
         #endregion
     }
 }
