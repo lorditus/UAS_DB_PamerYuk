@@ -46,7 +46,7 @@ namespace UAS_DB_PamerYuk.F3_Chat.View
             ChatRoomUC load = new ChatRoomUC(service, chat);
             chat.Controls.Add(load);
             chat.Controls[2].Visible = false;
-            chat.reloadLayout();
+            //chat.reloadLayout();
             chat.lblHeaderChat.Visible = false;
             chat.textBox1.Visible = false;
         }

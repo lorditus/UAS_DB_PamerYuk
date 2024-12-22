@@ -47,28 +47,28 @@ namespace UAS_DB_PamerYuk.F3_Chat.View
 
         }
 
-        public void reloadLayout()
-        {
-            this.Controls.RemoveAt(2);
-            FlowLayoutPanel flowChatList = new FlowLayoutPanel();
+        //public void reloadLayout()
+        //{
+        //    this.Controls.RemoveAt(2);
+        //    FlowLayoutPanel flowChatList = new FlowLayoutPanel();
 
-            this.Controls.Add(flowChatList);
-            int i;
+        //    this.Controls.Add(flowChatList);
+        //    int i;
 
-            flowChatList.Size = new System.Drawing.Size(485, (this.Size.Height - lblHeaderChat.Height - textBox1.Height));
-            flowChatList.Location = new System.Drawing.Point(0, (textBox1.Height + lblHeaderChat.Height));
-            for (i = 0; i <= 5; i++)
-            {
+        //    flowChatList.Size = new System.Drawing.Size(485, (this.Size.Height - lblHeaderChat.Height - textBox1.Height));
+        //    flowChatList.Location = new System.Drawing.Point(0, (textBox1.Height + lblHeaderChat.Height));
+        //    for (i = 0; i <= 5; i++)
+        //    {
 
-                SingleContact sc = new SingleContact(service, this);
-                sc.setTestSample(i);
-                sc.BackColor = ColorUtil.palette["soft-white"];
+        //        SingleContact sc = new SingleContact(service, this);
+        //        sc.setTestSample(i);
+        //        sc.BackColor = ColorUtil.palette["soft-white"];
 
-                flowChatList.Controls.Add(sc);
-            }
-            this.textBox1.Visible = true;
-            this.lblHeaderChat.Visible = true;
-        }
+        //        flowChatList.Controls.Add(sc);
+        //    }
+        //    this.textBox1.Visible = true;
+        //    this.lblHeaderChat.Visible = true;
+        //}
         string comand, filter;
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
